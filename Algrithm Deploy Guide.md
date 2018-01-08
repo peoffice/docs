@@ -1,6 +1,7 @@
 ### 1. Introduction
 #### Algorithm Library Framework
 ![image](https://github.com/peoffice/docs/blob/master/pngs/alg_framework.png)
+Algorithm are developped by C&C++ language for crossing platform(Linux,Windows). Algorithm Wrapper are developped by C# or Java language for C# or Java calling.
 #### Develop IDE and Running System
 ##### Develop IDE
 - Algorithm: Visual Studio 2013
@@ -21,11 +22,31 @@
 - Calling wrappers for C# and Java are provided as well as algorithms
 ### 2. Code Standards
 #### introduction of code solution
-##### algorithm code solution
+##### Algorithm code solution
 ![image](https://github.com/peoffice/docs/blob/master/pngs/alg_code_sln.png)
-##### algorithm wrapper code solution
+##### Algorithm wrapper code solution
 ![image](https://github.com/peoffice/docs/blob/master/pngs/alg_wrapper_sln.png)
-#### code specifications
+#### Code specifications
+##### Bsic specifications
+- Just functions are exported from the algorithm library module, but you can design your program with OOP
+- for input parameters type of exporting function, basic types are recommended, but if you think struct type is more fittable, you can use it after review this problem. But bool type is not permitted to use.
+- Return type of exporting function must be int, and the meaning of values is descripted in code annotation.
+- Message,warning,erroring information are recorded by log tools in algorithm library.
+- Use standard library, common function library and third party library for crossing flatform requirements
+- When you need to use big object with much memory, think of creating it in heap memory.
+- Annotation is keeping with code modification
+- Annotation of header files and functions is essential
+- Be cautious to use global variable
+##### Code annotation
+###### Header file annotation
+![image](https://github.com/peoffice/docs/blob/master/pngs/code_annotation_header.png)
+###### Function annotation
+![image](https://github.com/peoffice/docs/blob/master/pngs/code_annotation_function.png)
+###### Class, Structure and Enumtype annotation
+![image](https://github.com/peoffice/docs/blob/master/pngs/code_annotation_class.png)
+###### Programming annotation
+- `/*annotation*/`
+- `//annotation`
 ### 3. Algorithm Library Wrapper
 - Java wrapper is developped based on JNA(Java Native  Access) Open Source Library, it's license is LGPL
 - C# wrapper is developped based on P/Invoke framework of Microsoft
