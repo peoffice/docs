@@ -1,7 +1,35 @@
 ### 1. Introduction
 #### Algorithm Library Framework
+![image](https://github.com/peoffice/docs/blob/master/pngs/alg_framework.png)
 #### Develop IDE and Running System
-### 2. Third party Libraries Installation
+##### Develop IDE
+- Algorithm: Visual Studio 2013
+- Algorithm Wrapper for .NET: Visual Studio 2013
+- Algorithm Wrapper for Java: Eclipse
+##### Running System
+- Windows 32&64 System
+- Linux 64
+### 2. Overall Priciple of Algorithm Library Development
+- Provide algorithm design documents and unit test cases based on standard templates
+- Develop algorithm under the algorithm design documents strictly
+- Coding based on standard C&C++ to cross platform 
+- Third party libraries must accord with corssing platform and suitable license
+- Just funtions are acceptable as export objects for library
+- Algorithm classification is managed by namespace way
+- Accurate and stander code annotation and can be created help doc by doxygen tool
+- Code enters algorithm library after code reviewing
+- Calling wrappers for C# and Java are provided as well as algorithms
+### 2. Code Standards
+#### introduction of code solution
+##### algorithm code solution
+![image](https://github.com/peoffice/docs/blob/master/pngs/alg_code_sln.png)
+##### algorithm wrapper code solution
+![image](https://github.com/peoffice/docs/blob/master/pngs/alg_wrapper_sln.png)
+#### code specifications
+### 3. Algorithm Library Wrapper
+- Java wrapper is developped based on JNA(Java Native  Access) Open Source Library, it's license is LGPL
+- C# wrapper is developped based on P/Invoke framework of Microsoft
+### 3. Third party Libraries Installation
 ###### 1. Boost
 - Version 1.65.1
 - License [Boost license](http://www.boost.org/users/license.html "Boost license")
