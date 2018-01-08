@@ -1,6 +1,5 @@
 ### 1. Introduction
-### 2. Algorithm Library Building
-### 3. Third party Libraries Installation
+### 2. Third party Libraries Installation
 ###### 1. Boost
 - Version 1.65.1
 - License [Boost license](http://www.boost.org/users/license.html "Boost license")
@@ -19,7 +18,7 @@
 - WebSite [https://sourceforge.net/projects/log4cpp/](https://sourceforge.net/projects/log4cpp/ "Log4Cpp")
 - Installation
   - Windows
-    1. Open the project file and build
+    1. Open the project file with vs2013 and build
   - Linux
     1. ./Configure
     2. make
@@ -31,7 +30,7 @@
 - WebSite [https://github.com/google/googletest](https://github.com/google/googletest "GoogleTest")
 - Installation
   - Windows
-    1. Open the project file and build
+    1. Open the project file with vs2013 and build
   - Linux
     1. Suppose you put Google Test in directory ${GTEST_DIR)
     2. g++ -isystem ${GTEST_DIR}/include -I${GTEST_DIR} -pthread -c ${GTEST_DIR}/src/gtest-all.cc
@@ -42,6 +41,16 @@
 - WebSite [https://sourceforge.net/projects/tinyxml/](https://sourceforge.net/projects/tinyxml/ "Tinyxml")
 - Installation
   - Windows
-    1. Open the project file and build
+    1. Open the project file with vs2013 and build
   - Linux
     1. make
+### 2. Algorithm Library Building
+#### Windows
+1. Enter solutions folder
+2. Open alg_core.sln file with vs2013 and set MathUTRunner project to active project
+3. Build whole solution for win32 and x86 version
+4. Run or debug
+#### Linux
+1. Enter Linux folder
+2. sudo ./alg_build_deploy.sh
+3. ./alg_run.sh for running test 
