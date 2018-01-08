@@ -1,7 +1,6 @@
 ### 1. Introduction
 ### 2. Algorithm Library Building
 ### 3. Third party Libraries Installation
-##### Linux System
 ###### 1. Boost
 - Version 1.65.1
 - License [Boost license](http://www.boost.org/users/license.html "Boost license")
